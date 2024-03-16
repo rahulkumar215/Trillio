@@ -1,0 +1,10 @@
+.conatiner {
+  max-width: 120rem;
+  margin: 8rem auto;
+  min-height: 50rem;
+  box-shadow: var(--shadow-dark);
+  background-color: orangered;
+
+  display: flex;
+  flex-direction: column;
+}
