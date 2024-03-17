@@ -3,8 +3,44 @@
   margin: 8rem auto;
   min-height: 50rem;
   box-shadow: var(--shadow-dark);
-  background-color: orangered;
+  background-color: var(--color-grey-light-2);
 
+  display: flex;
+  flex-direction: column;
+
+  @media only screen and (max-width: $bp-largest){
+    margin: 0;
+    max-width: 100%;
+    width: 100%;
+  }
+}
+
+.header {
+  height: 7rem;
+  background-color: var(--color-grey-light-1);
+
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  border-bottom: var(--line);
+
+  @media only screen and (max-width: $bp-smallest) {
+    flex-wrap: wrap;
+    align-content: space-around;
+    height: 11rem;
+  }
+}
+
+.content{
+  display: flex;
+  flex: 1;
+
+  @media only screen and (max-width: $bp-medium){
+    flex-direction:column;
+  }
+}
+
+.hotel-view{
   display: flex;
   flex-direction: column;
 }
